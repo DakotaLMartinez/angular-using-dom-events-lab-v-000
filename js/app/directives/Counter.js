@@ -22,7 +22,7 @@ function Counter() {
 				scope.$apply();
 			});
 			
-			element.on('$destroy', function(){
+			scope.on('$destroy', function(){
 				element.off();
 			});
 		}
